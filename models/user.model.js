@@ -5,7 +5,7 @@ var Schema = Mongoose.Schema;
 var userSchema = new Schema({
   email: String,
   password: String,
-  role: String,
+  roles: [String],
   deleteDate: Date
 });
 

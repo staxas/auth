@@ -3,8 +3,7 @@ var Mongoose = require('mongoose');
 
 var Config = require('./config');
 
-var TokenRequests = require('./lib/token.requests');
-var UserRequests = require('./lib/user.requests');
+var Routes = require('./routes/routes.js');
 
 var User = require('./models/user.model');
 var Token = require('./models/token.model');
@@ -21,35 +20,7 @@ Server.connection({
   }
 });
 
-Server.route({
-  method: 'GET',
-  path: '/api/token/validate',
-  handler: TokenRequests.validate
-})
-
-Server.route({
-  method: 'GET',
-  path: '/api/token/decode',
-  handler: TokenRequests.decode
-})
-
-Server.route({
-  method: 'POST',
-  path: '/api/user/register',
-  handler: UserRequests.register
-})
-
-Server.route({
-  method: 'POST',
-  path: '/api/user/login',
-  handler: UserRequests.login
-})
-
-Server.route({
-  method: 'DELETE',
-  path: '/api/user/delete',
-  handler: UserRequests.delete
-})
+Server.route(Routes);
 
 // Start the server
 Server.start((err) => {
@@ -59,4 +30,4 @@ Server.start((err) => {
   console.log('Server running at:', Server.info.uri);
 });
 
-exports.server = Server
+exports.server = Server;
