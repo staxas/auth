@@ -10,14 +10,6 @@ Server and database URLs and ports: edit *config.js* accordingly.
 
 ###Endpoints and their methods
 
-#### Administration endpoints
-
-##### GET /api/tokens
-
-##### GET /api/user
-
-##### DELETE /api/user/{id}
-
 #### User endpoints
 
 ##### POST /api/user/register
@@ -32,3 +24,10 @@ Server and database URLs and ports: edit *config.js* accordingly.
 
 ##### GET /api/token/decode
 
+#### Administration endpoints
+
+##### GET /api/tokens
+
+##### GET /api/user
+
+##### DELETE /api/user/{id}
