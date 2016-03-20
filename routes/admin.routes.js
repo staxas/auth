@@ -14,6 +14,6 @@ module.exports = [{
 
   {
     method: 'DELETE',
-    path: '/api/users/{id}/delete',
+    path: '/api/user/{id}',
     handler: AdminRequests.deleteUser
   }];
