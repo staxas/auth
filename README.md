@@ -14,7 +14,7 @@ Server and database URLs and ports: edit *config.js* accordingly.
 
 ##### POST /api/user/register
 
-Allows user to create new account. Expects payload to contain a valid *string* type property *email* and a *string* type property *password* (3 to 30 characters). Checks if user exists in the database. IF not, encrypts password and adds the *roles* property containing *string array* *user*. Returns user database entry.
+Allows user to create new account. Expects payload to contain a valid *string* type property *email* and a *string* type property *password* (3 to 30 characters). Checks if user exists in the database. If not, encrypts password and adds the *roles* property containing *string array* *user*. Returns user database entry.
 
 ##### POST /api/user/login
 
