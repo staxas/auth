@@ -1,5 +1,5 @@
 # auth
-Webtoken based user administration and authorisation system
+Webtoken based user administration and authorisation API
 
 Install dependencies with
 ```bash
