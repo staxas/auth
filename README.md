@@ -32,7 +32,7 @@ Validate an existing token. If valid and not expired (expires after 24 hours) re
 
 ##### GET /api/token/decode
 
-Decode an existing token. If not expired, returns token payload data (user email, *array* type *roles* and *expireDate* properties*).
+Decode an existing token. If not expired, returns token payload data (*string* type user *email*, *string array* type *roles* and *Date* type *expireDate* properties*).
 
 #### Administration endpoints
 
